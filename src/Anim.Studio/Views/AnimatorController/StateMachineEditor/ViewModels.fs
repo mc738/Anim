@@ -112,6 +112,3 @@ module rec ViewModels =
 
         member _.AddConnection(source: ConnectorPortViewModel, target: ConnectorPortViewModel) =
             connections.Add(ConnectionViewModel(source, target))
-
-
-    ()
