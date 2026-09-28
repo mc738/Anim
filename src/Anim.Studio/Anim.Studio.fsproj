@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Views\AnimatorController\StateMachineEditor\ViewModels.fs" />
+        <Compile Include="Views\AnimatorController\StateMachineEditor\StateMachineEditorComponent.fs" />
+        <Compile Include="Views\AnimationControllerView.fs" />
+        <Folder Include="Views\AnimationLibrary\" />
+        <Folder Include="Views\AnimationTesting\" />
+        <Compile Include="MainWindow.axaml.fs"/>
+        <Compile Include="App.axaml.fs"/>
+        <Compile Include="Program.fs"/>
+        
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="12.1.1" />
+        <PackageReference Include="Avalonia.Desktop" Version="12.1.1" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.1" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.1" />
+        <PackageReference Include="Avalonia.Themes.Simple" Version="12.1.1" />
+        <PackageReference Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3">
+            <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+            <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\CommonResourceFormats\src\CommonResourceFormats.AnimationFile\CommonResourceFormats.AnimationFile.fsproj" />
+      <ProjectReference Include="..\..\..\FsToolbox\FsToolbox.Avalonia\FsToolbox.Avalonia.fsproj" />
+      <ProjectReference Include="..\..\..\FsToolbox\FsToolbox.GameDevelopment\FsToolbox.GameDevelopment.fsproj" />
+      <ProjectReference Include="..\..\..\FsToolbox\FsToolbox.GLTF\FsToolbox.GLTF.fsproj" />
+      <ProjectReference Include="..\..\..\__external\nodify-avalonia\nodify-avalonia\Nodify\Nodify.csproj" />
+      <ProjectReference Include="..\Anim\Anim.fsproj" />
+    </ItemGroup>
+</Project>
