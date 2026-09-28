@@ -151,7 +151,6 @@ module rec ViewModels =
             if source.Parent.Id = target.Parent.Id then
                 ()
             else
-
                 match source.ConnectorType, target.ConnectorType with
                 | ConnectorType.Output, ConnectorType.Input -> Result.Ok(source, target)
                 | ConnectorType.Input, ConnectorType.Output -> Result.Ok(target, source)
