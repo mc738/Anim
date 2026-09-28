@@ -14,6 +14,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolbox.Avalonia", "..\Fs
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolbox.GameDevelopment", "..\FsToolbox\FsToolbox.GameDevelopment\FsToolbox.GameDevelopment.fsproj", "{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nodify", "..\__external\nodify-avalonia\nodify-avalonia\Nodify\Nodify.csproj", "{1B84AB86-33EB-4B44-9029-A6452C78638F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,11 +46,16 @@ Global
 		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B84AB86-33EB-4B44-9029-A6452C78638F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B84AB86-33EB-4B44-9029-A6452C78638F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B84AB86-33EB-4B44-9029-A6452C78638F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B84AB86-33EB-4B44-9029-A6452C78638F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8F2A468F-5F73-4BBD-893D-E3F926E04ECD} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
 		{E67E8DF8-FDCC-45B5-969D-29E77BA1621A} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
 		{EC90B475-30A7-4419-B888-70E73F7A5B22} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
 		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
+		{1B84AB86-33EB-4B44-9029-A6452C78638F} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
 	EndGlobalSection
 EndGlobal

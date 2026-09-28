@@ -12,7 +12,7 @@ open Nodify
 type MainWindow() as this =
     inherit Window()
 
-    let animatorControllerView = AnimationControllerView()
+    let animatorControllerView = AnimationControllerView(this)
     
     let layout =
         [ RowDefinition(32, GridUnitType.Pixel)
