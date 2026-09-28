@@ -4,6 +4,16 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Anim", "src\Anim\Anim.fspro
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Anim.Studio", "src\Anim.Studio\Anim.Studio.fsproj", "{C5EA7901-CA1A-4EE0-97EB-61E61D9E7226}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_external", "_external", "{016ACCC5-349C-411C-99E6-E66DA42C8618}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolbox.GLTF", "..\FsToolbox\FsToolbox.GLTF\FsToolbox.GLTF.fsproj", "{8F2A468F-5F73-4BBD-893D-E3F926E04ECD}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolbox.OpenGL", "..\FsToolbox\FsToolbox.OpenGL\FsToolbox.OpenGL.fsproj", "{E67E8DF8-FDCC-45B5-969D-29E77BA1621A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolbox.Avalonia", "..\FsToolbox\FsToolbox.Avalonia\FsToolbox.Avalonia.fsproj", "{EC90B475-30A7-4419-B888-70E73F7A5B22}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolbox.GameDevelopment", "..\FsToolbox\FsToolbox.GameDevelopment\FsToolbox.GameDevelopment.fsproj", "{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +28,27 @@ Global
 		{C5EA7901-CA1A-4EE0-97EB-61E61D9E7226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5EA7901-CA1A-4EE0-97EB-61E61D9E7226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5EA7901-CA1A-4EE0-97EB-61E61D9E7226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2A468F-5F73-4BBD-893D-E3F926E04ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2A468F-5F73-4BBD-893D-E3F926E04ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2A468F-5F73-4BBD-893D-E3F926E04ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2A468F-5F73-4BBD-893D-E3F926E04ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E67E8DF8-FDCC-45B5-969D-29E77BA1621A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67E8DF8-FDCC-45B5-969D-29E77BA1621A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67E8DF8-FDCC-45B5-969D-29E77BA1621A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67E8DF8-FDCC-45B5-969D-29E77BA1621A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC90B475-30A7-4419-B888-70E73F7A5B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC90B475-30A7-4419-B888-70E73F7A5B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC90B475-30A7-4419-B888-70E73F7A5B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC90B475-30A7-4419-B888-70E73F7A5B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F2A468F-5F73-4BBD-893D-E3F926E04ECD} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
+		{E67E8DF8-FDCC-45B5-969D-29E77BA1621A} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
+		{EC90B475-30A7-4419-B888-70E73F7A5B22} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
+		{E0E3DD2A-22CC-4729-A2E0-7DBDEDD40556} = {016ACCC5-349C-411C-99E6-E66DA42C8618}
 	EndGlobalSection
 EndGlobal
