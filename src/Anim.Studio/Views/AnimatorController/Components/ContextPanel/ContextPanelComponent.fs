@@ -2,6 +2,7 @@ namespace Anim.Studio.Views.AnimatorController.Components.ContextPanel
 
 open System
 open Anim.Studio.Views.AnimatorController.Data
+open Anim.Studio.Views.AnimatorController.Panels.ContextPanels
 open Avalonia.Animation
 open Avalonia.Controls
 open Avalonia.Layout
@@ -10,6 +11,8 @@ open FsToolbox.Avalonia.Dsl
 
 type ContextPanelComponent() as this =
     inherit Grid()
+    
+    let nodeContextPanel = NodeContextPanel()
     
     let mutable selectedNode: NodeViewModel option = None
     
@@ -79,15 +82,8 @@ type ContextPanelComponent() as this =
     
     member _.SetSelectedNode(node: NodeViewModel) =
         selectedNode <- Some node
-        content.Content <-
-                StackPanel.create ControlStyle.Fill
-                |> withChildren [
-                    Label.create ControlStyle.Default |> Label.withContent node.Name
-                    Label.create ControlStyle.Default |> Label.withContent (node.Id.ToString())
-                    Button.create ControlStyle.Default
-                    |> Button.withContent "Add Transition"
-                    |> withHeight 24.
-                    |> Button.onClick (fun _ -> node.AddOutputPort("Test", true))
-                ]
+        nodeContextPanel.SetNode(node)
+        
+        content.Content <- nodeContextPanel
         
         

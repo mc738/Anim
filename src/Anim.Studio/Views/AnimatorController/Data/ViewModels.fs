@@ -92,7 +92,7 @@ module rec ViewModels =
 
             this.ClearSource()
 
-    type NodeViewModel(id: Guid, name: string, nodeType: NodeType) as this =
+    type NodeViewModel(id: Guid, initialName: string, nodeType: NodeType) as this =
 
         let inputs = ObservableCollection<ConnectorPortViewModel>()
         let outputs = ObservableCollection<ConnectorPortViewModel>()
@@ -100,6 +100,7 @@ module rec ViewModels =
         let propertyChanged =
             new Event<PropertyChangedEventHandler, PropertyChangedEventArgs>()
 
+        let mutable name = initialName
         let mutable location = Point(0, 0)
 
         interface INotifyPropertyChanged with
@@ -111,7 +112,11 @@ module rec ViewModels =
 
         member _.Id = id
 
-        member _.Name = name
+        member this.Name
+            with get () = name
+            and set (value) =
+                name<- value
+                this.OnPropertyChanged("Name")
 
         member _.NodeType = nodeType
         

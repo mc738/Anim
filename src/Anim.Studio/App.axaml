@@ -67,7 +67,7 @@
             <Setter Property="Background" Value="{StaticResource ScenicComment}"></Setter>
             <Setter Property="FontFamily" Value="Consolas"></Setter>
         </Style>
-
+        
         <Style Selector="TextBlock.error">
             <Setter Property="Foreground" Value="{StaticResource ScenicRedBrush}"></Setter>
         </Style>
@@ -107,6 +107,11 @@
         <Style Selector="Label.trace">
             <Setter Property="Background" Value="{StaticResource ScenicPurpleBrush}"></Setter>
             <Setter Property="Foreground" Value="{StaticResource ScenicBackground}"></Setter>
+        </Style>
+        
+        <Style Selector="Label.panel-title">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="16" />
         </Style>
 
 

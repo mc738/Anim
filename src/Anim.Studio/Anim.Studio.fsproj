@@ -10,7 +10,7 @@
         <Compile Include="Views\AnimatorController\Data\Nodes.fs" />
         <Compile Include="Views\AnimatorController\Data\EventArgs.fs" />
         <Compile Include="Views\AnimatorController\Windows\Dialogs.fs" />
-        <Folder Include="Views\AnimatorController\Panels\" />
+        <Compile Include="Views\AnimatorController\Panels\ContextPanels.fs" />
         <Compile Include="Views\AnimatorController\Components\StateMachineEditor\Initialization.fs" />
         <Compile Include="Views\AnimatorController\Components\StateMachineEditor\StateMachineEditorComponent.fs" />
         <Compile Include="Views\AnimatorController\Components\ContextPanel\ContextPanelComponent.fs" />
